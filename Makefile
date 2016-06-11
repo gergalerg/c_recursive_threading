@@ -15,6 +15,7 @@ OBJECTS:=$(SOURCES:.c=.o)
 .PHONY: all
 all: $(OBJECTS)
 	$(CC) $(THREADS) $(CFLAGS) $(OBJECTS) -o $(TARGET) 
+	./main
 
 .PHONY: test
 test:
